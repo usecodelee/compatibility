@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style type="text/css">
+			.ul1 {
+				list-style: none;
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			.div1 {
+				width: 100px;
+				height: 100px;
+				background-color: red;
+				border-radius: 20px;
+			}
+			
+			.div2 {
+				background-color: red;
+				float: left;
+				width: 150px;
+				height: 150px;
+				margin: 5px 0 5px 100px;
+				box-shadow: 20px 20px 10px #ccc;
+				filter: progid:dXImageTransform.Microsoft.DropShadow(color=#cccccc, offX=20, offY=20, positives=true);
+				filter: progid:DXImageTransform.Microsoft.Shadow(color='#cccccc', Direction='120', Strength='20');
+			}
+			
+			.div3 {
+				background-color: red;
+				width: 150px;
+				height: 150px;
+				font-size: 50px;
+				color: white;
+				-webkit-transform: rotateX(180deg);
+				-moz-transform: rotateX(180deg);
+				-ms-transform: rotateX(180deg);
+				-o-transform: rotateX(180deg);
+				transform: rotateX(180deg);
+				filter: flipv;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="ul1">
+			<li>语文</li>
+			<li>数学</li>
+			<li>英语</li>
+			<li>化学</li>
+			<li>物理</li>
+		</ul>
+		<!--<div class="div1"></div>-->
+		<!--<div class="div2"></div>-->
+		<div class="div3">123</div>
+		<video controls="controls" autoplay="autoplay" width="512" height="288" src="myvideo.mp4"></video>
+		<video width="512" height="288">
+			<source src="myvideo.mp4" type="video/mp4"></source>
+			<source src="myvideo.ogv" type="video/ogg"></source>
+			<source src="myvideo.webm" type="video/webm"></source>
+			<object width="512" height="288" type="application/x-shockwave-flash" data="myvideo.swf">
+				<param name="movie" value="myvideo.swf" />
+				<param name="flashvars" value="autostart=true&amp;file=myvideo.swf" />
+			</object>
+			当前浏览器不支持 video直接播放，点击这里下载视频： <a href="myvideo.webm">下载视频</a>
+		</video>
+	</body>
+
+</html>
